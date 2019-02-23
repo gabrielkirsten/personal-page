@@ -1,4 +1,4 @@
-# my-portifolio
+# My personal page
 
 ## Project setup
 ```
