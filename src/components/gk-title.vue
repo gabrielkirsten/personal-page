@@ -7,11 +7,11 @@
 
 <script>
 export default {
-    props: {
-        titleMessage: String,
-        subtitleMessage: String,
-    },
-}
+  props: {
+    titleMessage: String,
+    subtitleMessage: String,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -24,4 +24,3 @@ h2 {
     font-size: 15px;
 }
 </style>
-

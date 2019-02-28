@@ -6,10 +6,10 @@
 
 <script>
 export default {
-    props: {
-        label: String,
-    },
-}
+  props: {
+    label: String,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -26,4 +26,3 @@ export default {
         margin-top: 30px;
     }
 </style>
-

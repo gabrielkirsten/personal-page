@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <footer> 
+    <footer>
       <p>Gabriel Kirsten | 2019 </p>
       check this project <a class="github-link" href="" target="_blank">on github <i class="fab fa-github"></i> </a>
     </footer>
@@ -9,7 +9,7 @@
 </template>
 
 <style lang="scss" scoped>
-#nav { 
+#nav {
   :first-child {
     margin-right: 30px;
   }

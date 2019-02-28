@@ -7,11 +7,11 @@
 
 <script>
 export default {
-    props: {
-        type: String,
-        label: String,
-    },
-}
+  props: {
+    type: String,
+    label: String,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -32,4 +32,3 @@ input {
     margin-top: 20px;
 }
 </style>
-

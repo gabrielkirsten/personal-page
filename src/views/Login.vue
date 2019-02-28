@@ -19,14 +19,15 @@
 </template>
 
 <script>
-import GkInput from "@/components/gk-input.vue"
-import GkButton from "@/components/gk-button.vue"
+import GkInput from '@/components/gk-input.vue';
+import GkButton from '@/components/gk-button.vue';
+
 export default {
-    components: {
-        GkInput,
-        GkButton,
-    },
-}
+  components: {
+    GkInput,
+    GkButton,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -34,7 +35,7 @@ export default {
         text-align: center;
         height: 100vh;
     }
-    
+
     .center {
         position: absolute;
         top: 50%;
@@ -43,4 +44,3 @@ export default {
         max-width: 500px;
     }
 </style>
-
