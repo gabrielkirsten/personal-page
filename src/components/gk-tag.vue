@@ -11,14 +11,16 @@ export default {
   name: 'gk-tag',
   props: {
     text: String,
-    backgroundColor: String,
+    backgroundColor: {
+      type: String,
+      default: '#333333',
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .gk-tag {
-    background-color: #333333;
     padding: 4px;
     font-size: 12px;
     border-radius: 3px;
