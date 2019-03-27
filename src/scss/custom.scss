@@ -10,6 +10,17 @@
   color: #2c3e50;
 }
 
+.vue-typer {
+  font-family: 'Roboto Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+}
+
+.vue-typer .custom.char.typed {
+  color: #2c3e50;
+}
+
 body {
     margin: 0;
 }

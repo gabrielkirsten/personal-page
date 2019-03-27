@@ -21,7 +21,8 @@
         </div>
         <div class="cover-content">
             <gk-title titleMessage="GABRIEL KIRSTEN"
-                      subtitleMessage="BRAZILIAN SOFTWARE ENGINEER 👨‍💻"/>
+                      subtitleMessage="BRAZILIAN SOFTWARE ENGINEER 👨‍💻"
+                      :typedMessage="['FULL STACK DEVELOPER', 'JAVA', 'SPRING', 'JAVASCRIPT', 'VUEJS']"/>
         </div>
     </div>
     <div class="end-cover">
