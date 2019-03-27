@@ -3,7 +3,7 @@
     <router-view/>
     <footer>
       <p>Gabriel Kirsten | 2019 </p>
-      check this project <a class="github-link" href="" target="_blank">on github <i class="fab fa-github"></i> </a>
+      check this project <a class="github-link" href="https://github.com/gabrielkirsten/personal-page" target="_blank">on github <i class="fab fa-github"></i> </a>
     </footer>
   </div>
 </template>
