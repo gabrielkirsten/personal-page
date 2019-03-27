@@ -36,18 +36,110 @@
                 :text="section.text"
                 :items="section.sectionItens"
                 v-for="section in sections" v-bind:key="section.id"/>
+
+    <gk-section :customStyle="'black'">
+      <b-container>
+        <div class="section-title">
+          <h2> ABOUT ME </h2>
+        </div>
+        <b-row>
+          <b-col xs="12">
+            <p>
+              Master's degree (Scholarship holder) in Computer Science in the area of computer vision 
+              by the Federal University of Mato Grosso do Sul (UFMS). He holds a degree in Computer Engineering 
+              from the Dom Bosco Catholic University (2016). Developer Java (web) and Python (AI, data science).
+            </p>
+          </b-col>
+        </b-row>
+      </b-container>
+    </gk-section>
+
+
+    <gk-section :customStyle="'white'">
+      <b-container>
+        <div class="section-title">
+          <h2> PROJECTS I'M WORKING ON <span> HERE'S WHAT I'M DOING</span></h2>
+        </div>
+        <b-row class="section-itens">
+
+          <b-col md="12">
+            <div class="border-section" @click="goToLink('https://gabrielkirsten.github.io/cnn_keras/')">
+              <gk-tag text="Deep learning"
+                      backgroundColor="#7483FF"/>
+              <gk-tag text="Computer Vision"
+                      backgroundColor="#FFAE8E"/>
+              <h3 class="title">
+                CNN Keras
+              </h3>
+              <p class="description">A simple and generic image classifier built with Keras/Tensorflow using cuda libraries.</p>
+            </div>
+          </b-col>
+
+          <b-col md="12">
+            <div class="border-section" @click="goToLink('')">
+              <gk-tag text="Deep learning"
+                      backgroundColor="#7483FF"/>
+              <gk-tag text="Computer Vision"
+                      backgroundColor="#FFAE8E"/>
+              <gk-tag text="MSc"
+                      backgroundColor="#79CC49"/>
+              <h3 class="title">
+                RESEARCH
+              </h3>
+              <p class="description">
+                Research in deep learning and computer vision to detect problens in soybeans by images obtained from unmanned vehicles.
+              </p>
+            </div>
+          </b-col>
+
+          <b-col md="12">
+            <div class="border-section" @click="goToLink('https://github.com/gabrielkirsten/pseudo_label_keras')">
+              <gk-tag text="Deep learning"
+                      backgroundColor="#7483FF"/>
+              <gk-tag text="Computer Vision"
+                      backgroundColor="#FFAE8E"/>
+              <gk-tag text="MSc"
+                      backgroundColor="#79CC49"/>
+              <h3 class="title">
+                KERAS/TENSORFLOW SEMI-SUPERVISED IMAGE CLASSIFICATOR
+              </h3>
+              <p class="description">
+                A semi-supervised image classifier built with Keras using cuda libraries and pseudo-label algorithm.
+              </p>
+            </div>
+          </b-col>
+
+          <b-col md="12">
+            <div class="border-section" @click="goToLink('https://somoskratos.com.br')">
+              <gk-tag text="JAVA"
+                      backgroundColor="#404CB2"/>
+              <h3 class="title">
+                KRATOS
+              </h3>
+              <p class="description">
+                WEB software that serve large companies, issuing fiscal documents according to Brazilian legislation and controlling their management. It uses for Java 8, AngularJS, VueJS, Spring ecosystem and Azure Infrastructure. One of the first online platforms for the issuance of Brazilian consumer electronic invoices.
+              </p>
+            </div>
+          </b-col>
+          
+        </b-row>
+      </b-container>
+    </gk-section>
+
   </div>
 </template>
 
 <script>
 import GkTitle from '@/components/gk-title.vue';
 import GkSection from '@/components/gk-section.vue';
+import GkTag from '@/components/gk-tag.vue';
 
 export default {
   name: 'home',
   components: {
     GkTitle,
     GkSection,
+    GkTag,
   },
   data() {
     return {
@@ -83,57 +175,13 @@ export default {
           tooltip: 'send me a messsage on whatsapp',
         },
       ],
-
-      sections: [
-        {
-          id: 1,
-          title: 'PROJECTS I\'M WORKING ON',
-          titleDescription: 'HERE\'S WHAT I\'M DOING',
-          sectionItens: [
-            {
-              id: 1,
-              title: 'CNN Keras',
-              tags: [{ name: 'Deep learning', color: '#7483FF' }, { name: 'Computer vision', color: '#FFAE8E' }],
-              description: 'A simple and generic image classifier built with Keras/Tensorflow using cuda libraries.',
-              link: 'https://gabrielkirsten.github.io/cnn_keras/',
-            },
-            {
-              id: 2,
-              title: 'RESEARCH',
-              tags: [{ name: 'Deep learning', color: '#7483FF' }, { name: 'Computer vision', color: '#FFAE8E' }, { name: 'MSc', color: '#79CC49' }],
-              description: 'Research in deep learning and computer vision to detect problens in soybeans by images obtained from unmanned vehicles.',
-            },
-            {
-              id: 3,
-              title: 'KERAS/TENSORFLOW SEMI-SUPERVISED IMAGE CLASSIFICATOR',
-              tags: [{ name: 'Deep learning', color: '#7483FF' }, { name: 'Computer vision', color: '#FFAE8E' }, { name: 'MSc', color: '#79CC49' }],
-              description: 'A semi-supervised image classifier built with Keras using cuda libraries and pseudo-label algorithm.',
-              link: 'https://github.com/gabrielkirsten/pseudo_label_keras',
-            },
-            {
-              id: 4,
-              title: 'KRATOS',
-              tags: [{ name: 'JAVA', color: '#404CB2' }],
-              subtitle: "MY COMPANY'S PROJECT",
-              description: 'WEB software that serve large companies, issuing fiscal documents according to Brazilian legislation and controlling their management. It uses for Java 8, AngularJS, VueJS, Spring ecosystem and Azure Infrastructure. One of the first online platforms for the issuance of Brazilian consumer electronic invoices.',
-              link: 'https://somoskratos.com.br',
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: 'ANOTHER COOL PROJECTS',
-        },
-        {
-          id: 3,
-          title: 'ABOUT ME',
-          style: 'white',
-          text: 'Master\'s degree (Scholarship holder) in Computer Science in the area of computer vision by the Federal University of Mato Grosso do Sul (UFMS). He holds a degree in Computer Engineering from the Dom Bosco Catholic University (2016). Developer Java (web) and Python (AI, data science).',
-          customStyle: 'white',
-        },
-      ],
     };
   },
+  methods: {
+     goToLink(link) {
+      window.open(link, '_blank');
+    },
+  }
 };
 </script>
 

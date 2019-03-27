@@ -29,3 +29,25 @@ a {
   text-decoration: none;
   color: #2c3e50;
 }
+
+.section-itens {
+  margin-bottom: 30px;
+  font-size: 14px;
+  .title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-top: 10px;
+      .subtitle {
+          font-weight: 300;
+          font-size: 12px;
+      }
+  }
+  .description {
+      font-weight: 300;
+  }
+}
+
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
