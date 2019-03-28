@@ -22,7 +22,12 @@
         <div class="cover-content">
             <gk-title titleMessage="GABRIEL KIRSTEN"
                       subtitleMessage="BRAZILIAN SOFTWARE ENGINEER 👨‍💻"
-                      :typedMessage="['FULL STACK DEVELOPER', 'JAVA', 'SPRING', 'JAVASCRIPT', 'VUEJS']"/>
+                      :typedMessage="['FULL STACK DEVELOPER',
+                                      'JAVA',
+                                      'SPRING',
+                                      'JAVASCRIPT',
+                                      'VUEJS']"
+            />
         </div>
     </div>
     <div class="end-cover">
@@ -45,9 +50,10 @@
         <b-row>
           <b-col xs="12">
             <p>
-              Master's degree (Scholarship holder) in Computer Science in the area of computer vision 
-              by the Federal University of Mato Grosso do Sul (UFMS). He holds a degree in Computer Engineering 
-              from the Dom Bosco Catholic University (2016). Developer Java (web) and Python (AI, data science).
+              Master's degree (Scholarship holder) in Computer Science in the area of
+              computer vision  the Federal University of Mato Grosso do Sul (UFMS).
+              He holds a degree in Computer Engineering from the Dom Bosco Catholic
+              University (2016). Developer Java (web) and Python (AI, data science).
             </p>
           </b-col>
         </b-row>
@@ -71,7 +77,10 @@
               <h3 class="title">
                 CNN Keras
               </h3>
-              <p class="description">A simple and generic image classifier built with Keras/Tensorflow using cuda libraries.</p>
+              <p class="description">
+                A simple and generic image classifier built with
+                Keras/Tensorflow using cuda libraries.
+                </p>
             </div>
           </b-col>
 
@@ -87,7 +96,8 @@
                 RESEARCH
               </h3>
               <p class="description">
-                Research in deep learning and computer vision to detect problens in soybeans by images obtained from unmanned vehicles.
+                Research in deep learning and computer vision to detect problens in
+                soybeans by images obtained from unmanned vehicles.
               </p>
             </div>
           </b-col>
@@ -104,7 +114,8 @@
                 KERAS/TENSORFLOW SEMI-SUPERVISED IMAGE CLASSIFICATOR
               </h3>
               <p class="description">
-                A semi-supervised image classifier built with Keras using cuda libraries and pseudo-label algorithm.
+                A semi-supervised image classifier built with Keras using cuda
+                libraries and pseudo-label algorithm.
               </p>
             </div>
           </b-col>
@@ -117,11 +128,14 @@
                 KRATOS
               </h3>
               <p class="description">
-                WEB software that serve large companies, issuing fiscal documents according to Brazilian legislation and controlling their management. It uses for Java 8, AngularJS, VueJS, Spring ecosystem and Azure Infrastructure. One of the first online platforms for the issuance of Brazilian consumer electronic invoices.
+                WEB software that serve large companies, issuing fiscal documents according
+                to Brazilian legislation and controlling their management. It uses for Java 8,
+                AngularJS, VueJS, Spring ecosystem and Azure Infrastructure. One of the first
+                online platforms for the issuance of Brazilian consumer electronic invoices.
               </p>
             </div>
           </b-col>
-          
+
         </b-row>
       </b-container>
     </gk-section>
@@ -178,10 +192,10 @@ export default {
     };
   },
   methods: {
-     goToLink(link) {
+    goToLink(link) {
       window.open(link, '_blank');
     },
-  }
+  },
 };
 </script>
 

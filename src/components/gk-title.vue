@@ -19,7 +19,8 @@
 </template>
 
 <script>
-import {VueTyper} from 'vue-typer';
+import { VueTyper } from 'vue-typer';
+
 export default {
   components: {
     VueTyper,

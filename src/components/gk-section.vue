@@ -5,11 +5,9 @@
 </template>
 
 <script>
-import GkTag from '@/components/gk-tag.vue';
 
 export default {
   components: {
-    GkTag,
   },
   props: {
     title: String,
