@@ -44,13 +44,6 @@
       </p>
     </div>
 
-    <gk-section :title="section.title"
-                :titleDescription="section.titleDescription"
-                :customStyle="section.style"
-                :text="section.text"
-                :items="section.sectionItens"
-                v-for="section in sections" v-bind:key="section.id"/>
-
     <gk-section :customStyle="'black'">
       <b-container>
         <div class="section-title">
