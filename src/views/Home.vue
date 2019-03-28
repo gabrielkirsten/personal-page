@@ -30,9 +30,18 @@
             />
         </div>
     </div>
-    <div class="end-cover">
+    <div class="end-cover" v-scroll-to="{el: '#about',
+                                         duration: 500,
+                                         easing: 'ease',
+                                         force: true,
+                                         cancelable: true,
+                                         x: false,
+                                         y: true
+    }">
+      <p>
         READ MORE
         <i class="fas fa-angle-double-down"></i>
+      </p>
     </div>
 
     <gk-section :title="section.title"
@@ -45,7 +54,7 @@
     <gk-section :customStyle="'black'">
       <b-container>
         <div class="section-title">
-          <h2> ABOUT ME </h2>
+          <h2 id='about'> ABOUT ME </h2>
         </div>
         <b-row>
           <b-col xs="12">
@@ -229,6 +238,7 @@ export default {
 .end-cover {
   text-align: center;
   font-weight: 300;
+  cursor: pointer;
 }
 
 </style>
