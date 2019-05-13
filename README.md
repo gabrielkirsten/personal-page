@@ -1,5 +1,7 @@
 # My personal page
 
+To see my personal page, [click here](https://gabrielkirsten.me).
+
 ## Project setup
 ```
 npm install
