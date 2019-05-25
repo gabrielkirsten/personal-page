@@ -174,7 +174,7 @@ export default {
         },
         {
           id: 3,
-          link: 'https://medium.com/@gabrielkirsten1',
+          link: 'https://medium.com/@gabrielkirsten',
           icon: 'fab fa-medium',
           tooltip: 'follow me on medium',
         },
