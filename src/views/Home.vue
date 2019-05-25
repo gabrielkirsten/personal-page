@@ -26,7 +26,9 @@
                                       'JAVA',
                                       'SPRING',
                                       'JAVASCRIPT',
-                                      'VUEJS']"
+                                      'VUEJS', 
+                                      'MACHINE LEARNING',
+                                      'COMPUTER VISION']"
             />
         </div>
     </div>
@@ -69,6 +71,22 @@
           <h2> PROJECTS I'M WORKING ON <span> HERE'S WHAT I'M DOING</span></h2>
         </div>
         <b-row class="section-itens">
+
+          <b-col md="12">
+            <div class="border-section" @click="goToLink('https://gabrielkirsten.github.io/cnn_keras/')">
+              <gk-tag text="Deep learning"
+                      backgroundColor="#7483FF"/>
+              <gk-tag text="Computer Vision"
+                      backgroundColor="#FFAE8E"/>
+              <h3 class="title">
+                CNN Keras
+              </h3>
+              <p class="description">
+                A simple and generic image classifier built with
+                Keras/Tensorflow using cuda libraries.
+                </p>
+            </div>
+          </b-col>
 
           <b-col md="12">
             <div class="border-section" @click="goToLink('https://gabrielkirsten.github.io/cnn_keras/')">
