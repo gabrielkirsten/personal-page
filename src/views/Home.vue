@@ -20,6 +20,7 @@
             </span>
         </div>
         <div class="cover-content">
+            <img src="@/assets/profile.jpg" class="image-profile">
             <gk-title titleMessage="GABRIEL KIRSTEN"
                       subtitleMessage="BRAZILIAN SOFTWARE ENGINEER 👨‍💻"
                       :typedMessage="['FULL STACK DEVELOPER',
@@ -68,23 +69,18 @@
     <gk-section :customStyle="'white'">
       <b-container>
         <div class="section-title">
-          <h2> PROJECTS I'M WORKING ON <span> HERE'S WHAT I'M DOING</span></h2>
+          <h2> PROJECTS I'M WORKING ON</h2>
         </div>
         <b-row class="section-itens">
 
           <b-col md="12">
-            <div class="border-section" @click="goToLink('https://gabrielkirsten.github.io/cnn_keras/')">
-              <gk-tag text="Deep learning"
-                      backgroundColor="#7483FF"/>
-              <gk-tag text="Computer Vision"
-                      backgroundColor="#FFAE8E"/>
+            <div class="border-section" @click="goToLink('https://medium.com/@gabrielkirsten')">
               <h3 class="title">
-                CNN Keras
+                MEDIUM
               </h3>
               <p class="description">
-                A simple and generic image classifier built with
-                Keras/Tensorflow using cuda libraries.
-                </p>
+                Writing some medium posts. 
+              </p>
             </div>
           </b-col>
 
@@ -249,4 +245,11 @@ export default {
   cursor: pointer;
 }
 
+.image-profile {
+  height: 150px;
+  width: 150px;
+  border-radius: 1000px;
+  object-fit: cover;
+  margin-bottom:40px;
+}
 </style>
