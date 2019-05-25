@@ -141,17 +141,14 @@
           </b-col>
 
           <b-col md="12">
-            <div class="border-section" @click="goToLink('https://somoskratos.com.br')">
+            <div class="border-section" @click="goToLink('https://db1.com.br')">
               <gk-tag text="JAVA"
                       backgroundColor="#404CB2"/>
               <h3 class="title">
-                KRATOS
+                DB1 Global software
               </h3>
               <p class="description">
-                WEB software that serve large companies, issuing fiscal documents according
-                to Brazilian legislation and controlling their management. It uses for Java 8,
-                AngularJS, VueJS, Spring ecosystem and Azure Infrastructure. One of the first
-                online platforms for the issuance of Brazilian consumer electronic invoices.
+                Work at DB1 Global Software.
               </p>
             </div>
           </b-col>
